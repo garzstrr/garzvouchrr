@@ -5,41 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GarzVoucher - Top Up Game Terpercaya</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-black: #121212;
-            --secondary-black: #1e1e1e;
-            --card-black: #252525;
-            --accent-blue: #1e88e5;
-            --accent-green: #00c853;
-            --text-light: #f5f5f5;
-            --text-gray: #b0b0b0;
-            --border-dark: #333;
-            --success: #4caf50;
+            --primary-blue: #1a73e8;
+            --secondary-blue: #4285f4;
+            --dark-blue: #0d47a1;
+            --light-blue: #e3f2fd;
+            --accent: #ff6d00;
+            --text: #202124;
+            --light-text: #f8f9fa;
+            --gray: #dadce0;
+            --success: #34a853;
+            --card-shadow: 0 8px 20px rgba(26, 115, 232, 0.15);
         }
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         
         body {
-            background-color: var(--primary-black);
-            color: var(--text-light);
+            background: linear-gradient(135deg, #f0f7ff, #e3f2fd);
+            color: var(--text);
             line-height: 1.6;
             overflow-x: hidden;
         }
         
         header {
-            background-color: rgba(18, 18, 18, 0.95);
+            background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
             padding: 1rem 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid var(--border-dark);
         }
         
         .container {
@@ -64,14 +65,12 @@
         .logo h1 {
             font-size: 1.8rem;
             font-weight: 700;
-            background: linear-gradient(90deg, var(--accent-blue), #64b5f6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: white;
         }
         
         .logo i {
             font-size: 2rem;
-            color: var(--accent-blue);
+            color: white;
         }
         
         nav ul {
@@ -81,7 +80,7 @@
         }
         
         nav a {
-            color: var(--text-light);
+            color: var(--light-text);
             text-decoration: none;
             font-weight: 500;
             padding: 0.5rem 0.8rem;
@@ -97,7 +96,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: var(--accent-blue);
+            background: white;
             transition: width 0.3s ease;
         }
         
@@ -106,7 +105,7 @@
         }
         
         nav a:hover, nav a.active {
-            color: var(--accent-blue);
+            color: white;
         }
         
         .user-actions {
@@ -128,21 +127,21 @@
         }
         
         .btn-primary {
-            background: linear-gradient(135deg, var(--accent-blue), #0d47a1);
+            background: linear-gradient(135deg, var(--accent), #e65100);
             color: white;
-            box-shadow: 0 4px 10px rgba(30, 136, 229, 0.3);
+            box-shadow: var(--card-shadow);
         }
         
         .btn-outline {
             background-color: transparent;
-            border: 1px solid var(--accent-blue);
-            color: var(--accent-blue);
+            border: 1px solid white;
+            color: white;
         }
         
         .btn-whatsapp {
             background: linear-gradient(135deg, #25D366, #128C7E);
             color: white;
-            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+            box-shadow: var(--card-shadow);
         }
         
         .btn-google {
@@ -157,7 +156,7 @@
         
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
         
         .btn:active {
@@ -165,7 +164,7 @@
         }
         
         .hero {
-            background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(30, 30, 30, 0.9)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
+            background: linear-gradient(rgba(26, 115, 232, 0.9), rgba(13, 71, 161, 0.9)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
             background-size: cover;
             background-position: center;
             padding: 5rem 0;
@@ -181,21 +180,22 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background: linear-gradient(90deg, var(--accent-blue), #64b5f6);
+            background: linear-gradient(90deg, var(--accent), #ff9e80);
         }
         
         .hero h2 {
             font-size: 2.8rem;
             margin-bottom: 1rem;
             font-weight: 700;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
         
         .hero p {
             font-size: 1.2rem;
             max-width: 700px;
             margin: 0 auto 2rem;
-            color: var(--text-gray);
+            color: var(--light-text);
         }
         
         .section-title {
@@ -209,6 +209,7 @@
             font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
+            color: var(--dark-blue);
         }
         
         .section-title::after {
@@ -219,7 +220,7 @@
             transform: translateX(-50%);
             width: 100px;
             height: 4px;
-            background: linear-gradient(90deg, var(--accent-blue), #64b5f6);
+            background: linear-gradient(90deg, var(--primary-blue), var(--accent));
             border-radius: 2px;
         }
         
@@ -231,19 +232,18 @@
         }
         
         .game-card {
-            background-color: var(--card-black);
+            background-color: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: var(--card-shadow);
             transition: all 0.3s ease;
             cursor: pointer;
-            border: 1px solid var(--border-dark);
+            border: 1px solid var(--gray);
         }
         
         .game-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
-            border-color: var(--accent-blue);
+            box-shadow: 0 12px 25px rgba(26, 115, 232, 0.25);
         }
         
         .game-card img {
@@ -257,15 +257,16 @@
             text-align: center;
             font-size: 1.1rem;
             font-weight: 600;
+            background: var(--light-blue);
         }
         
         .diamonds-container {
-            background-color: var(--secondary-black);
+            background-color: white;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: var(--card-shadow);
             padding: 2rem;
             margin: 2rem 0;
-            border: 1px solid var(--border-dark);
+            border: 1px solid var(--gray);
         }
         
         .diamonds-grid {
@@ -275,14 +276,15 @@
         }
         
         .diamond-card {
-            background-color: var(--card-black);
+            background-color: white;
             border-radius: 10px;
             padding: 1.5rem;
             text-align: center;
-            border: 1px solid var(--border-dark);
+            border: 1px solid var(--gray);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         
         .diamond-card::before {
@@ -292,49 +294,49 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background: linear-gradient(90deg, var(--accent-blue), #64b5f6);
+            background: linear-gradient(90deg, var(--primary-blue), var(--accent));
         }
         
         .diamond-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
         
         .diamond-icon {
             font-size: 3rem;
-            color: var(--accent-blue);
+            color: var(--primary-blue);
             margin-bottom: 0.5rem;
-            text-shadow: 0 0 10px rgba(30, 136, 229, 0.5);
         }
         
         .diamond-amount {
             font-size: 1.6rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
-            color: var(--accent-blue);
+            color: var(--dark-blue);
         }
         
         .diamond-price {
             font-size: 1.3rem;
-            color: var(--accent-green);
+            color: var(--success);
             font-weight: 700;
             margin-bottom: 0.3rem;
         }
         
         .diamond-original-price {
             text-decoration: line-through;
-            color: var(--text-gray);
+            color: var(--text);
             font-size: 0.9rem;
             margin-bottom: 1.2rem;
+            opacity: 0.7;
         }
         
         .user-id-input {
             width: 100%;
             padding: 0.8rem;
-            background-color: var(--secondary-black);
-            border: 1px solid var(--border-dark);
+            background-color: var(--light-blue);
+            border: 1px solid var(--primary-blue);
             border-radius: 6px;
-            color: var(--text-light);
+            color: var(--text);
             margin-bottom: 1rem;
             text-align: center;
             font-size: 1rem;
@@ -342,7 +344,7 @@
         
         .user-id-input:focus {
             outline: none;
-            border-color: var(--accent-blue);
+            border-color: var(--accent);
         }
         
         .payment-methods {
@@ -354,13 +356,13 @@
         }
         
         .payment-method {
-            background-color: var(--card-black);
+            background-color: white;
             border-radius: 10px;
             padding: 1rem 1.5rem;
             display: flex;
             align-items: center;
             gap: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: var(--card-shadow);
             cursor: pointer;
             transition: all 0.3s ease;
             border: 2px solid transparent;
@@ -368,9 +370,8 @@
         }
         
         .payment-method:hover, .payment-method.active {
-            border-color: var(--accent-blue);
+            border-color: var(--primary-blue);
             transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
         }
         
         .payment-method i {
@@ -382,48 +383,66 @@
         .payment-method .fa-credit-card { color: #FF6D00; }
         
         .promo-section {
-            background-color: var(--secondary-black);
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: var(--card-shadow);
             padding: 2rem;
             margin: 3rem 0;
             text-align: center;
-            border: 1px solid var(--border-dark);
+            border: 1px solid var(--gray);
+            color: white;
         }
         
         .promo-content {
-            background: linear-gradient(135deg, #1e1e1e, #121212);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-            padding: 3rem 2rem;
-            border: 2px dashed var(--border-dark);
+            padding: 2rem;
+            border: 2px dashed rgba(255, 255, 255, 0.3);
         }
         
         .promo-content i {
-            font-size: 4rem;
-            color: var(--accent-blue);
-            margin-bottom: 1.5rem;
-            opacity: 0.7;
+            font-size: 3rem;
+            color: #FFD700;
+            margin-bottom: 1rem;
         }
         
         .promo-content h3 {
             font-size: 1.8rem;
             margin-bottom: 0.5rem;
-            color: var(--accent-blue);
+            color: #FFD700;
         }
         
         .promo-content p {
-            color: var(--text-gray);
             max-width: 600px;
             margin: 0 auto;
             line-height: 1.8;
         }
         
+        .promo-timer {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 50px;
+            padding: 0.8rem;
+            margin: 1.5rem auto;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .timer-item {
+            background: white;
+            color: var(--primary-blue);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: 700;
+            min-width: 60px;
+        }
+        
         .contact-section {
-            background: linear-gradient(135deg, var(--primary-black), #0d0d0d);
+            background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
             padding: 4rem 0;
             margin-top: 3rem;
             position: relative;
-            border-top: 1px solid var(--border-dark);
         }
         
         .contact-content {
@@ -442,7 +461,7 @@
         }
         
         .contact-info a {
-            color: var(--text-light);
+            color: white;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -453,26 +472,25 @@
         }
         
         .contact-info a:hover {
-            color: var(--accent-blue);
+            color: #FFD700;
             transform: translateX(5px);
         }
         
         footer {
-            background-color: #0d0d0d;
+            background: linear-gradient(135deg, var(--dark-blue), #0d0d0d);
             text-align: center;
             padding: 1.5rem 0;
             font-size: 0.9rem;
-            color: var(--text-gray);
-            border-top: 1px solid var(--border-dark);
+            color: var(--light-text);
         }
         
         .transaction-section {
-            background-color: var(--secondary-black);
+            background-color: white;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: var(--card-shadow);
             padding: 2rem;
             margin: 2rem 0;
-            border: 1px solid var(--border-dark);
+            border: 1px solid var(--gray);
         }
         
         .transaction-table {
@@ -485,26 +503,26 @@
         .transaction-table td {
             padding: 15px;
             text-align: left;
-            border-bottom: 1px solid var(--border-dark);
+            border-bottom: 1px solid var(--gray);
         }
         
         .transaction-table th {
-            background-color: rgba(30, 136, 229, 0.1);
-            color: var(--accent-blue);
+            background-color: var(--light-blue);
+            color: var(--dark-blue);
             font-weight: 600;
         }
         
         .transaction-table tr:hover {
-            background-color: rgba(255, 255, 255, 0.03);
+            background-color: rgba(26, 115, 232, 0.05);
         }
         
         .status-completed {
-            color: var(--accent-green);
+            color: var(--success);
             font-weight: 600;
         }
         
         .status-pending {
-            color: #ffc107;
+            color: #fbbc05;
             font-weight: 600;
         }
         
@@ -515,20 +533,19 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.7);
             z-index: 2000;
             justify-content: center;
             align-items: center;
         }
         
         .modal-content {
-            background: linear-gradient(135deg, var(--secondary-black), #1a1a1a);
+            background: white;
             border-radius: 12px;
             width: 90%;
             max-width: 500px;
             padding: 2.5rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-            border: 1px solid var(--border-dark);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             position: relative;
         }
         
@@ -540,19 +557,19 @@
         }
         
         .modal-header h2 {
-            color: var(--accent-blue);
+            color: var(--primary-blue);
             font-size: 1.8rem;
         }
         
         .close-modal {
             font-size: 1.8rem;
             cursor: pointer;
-            color: var(--text-gray);
+            color: var(--text);
             transition: all 0.3s ease;
         }
         
         .close-modal:hover {
-            color: var(--text-light);
+            color: var(--primary-blue);
         }
         
         .form-group {
@@ -563,22 +580,22 @@
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 500;
-            color: var(--text-light);
+            color: var(--text);
         }
         
         .form-group input {
             width: 100%;
             padding: 0.9rem;
-            background-color: var(--card-black);
-            border: 1px solid var(--border-dark);
+            background-color: var(--light-blue);
+            border: 1px solid var(--gray);
             border-radius: 6px;
             font-size: 1rem;
-            color: var(--text-light);
+            color: var(--text);
         }
         
         .form-group input:focus {
             outline: none;
-            border-color: var(--accent-blue);
+            border-color: var(--primary-blue);
         }
         
         .modal-footer {
@@ -590,12 +607,12 @@
         
         .social-login {
             display: flex;
+            flex-direction: column;
             gap: 1rem;
             margin: 1.5rem 0;
         }
         
         .social-btn {
-            flex: 1;
             padding: 0.8rem;
             border-radius: 6px;
             font-weight: 500;
@@ -610,6 +627,7 @@
         
         .social-btn:hover {
             transform: translateY(-3px);
+            box-shadow: var(--card-shadow);
         }
         
         .divider {
@@ -617,14 +635,14 @@
             align-items: center;
             text-align: center;
             margin: 1.5rem 0;
-            color: var(--text-gray);
+            color: var(--text);
         }
         
         .divider::before,
         .divider::after {
             content: '';
             flex: 1;
-            border-bottom: 1px solid var(--border-dark);
+            border-bottom: 1px solid var(--gray);
         }
         
         .divider::before {
@@ -643,7 +661,7 @@
         }
         
         .login-links a {
-            color: var(--accent-blue);
+            color: var(--primary-blue);
             text-decoration: none;
         }
         
@@ -863,9 +881,19 @@
         <div class="promo-section">
             <div class="promo-content">
                 <i class="fas fa-tag"></i>
-                <h3>Promo Belum Tersedia</h3>
-                <p>Nantikan promo menarik untuk pembelian diamond di GarzVoucher. Dapatkan harga spesial dan bonus tambahan!</p>
-                <p>Segera hadir...</p>
+                <h3>Promo Spesial Akhir Bulan!</h3>
+                <p>Dapatkan diskon tambahan 15% untuk semua pembelian diamond di atas 100💎</p>
+                <p>Promo berlaku hingga:</p>
+                
+                <div class="promo-timer">
+                    <div class="timer-item">31</div>
+                    <div>Juli</div>
+                    <div class="timer-item">2023</div>
+                </div>
+                
+                <button class="btn btn-primary">
+                    Klaim Promo Sekarang
+                </button>
             </div>
         </div>
     </section>
@@ -875,8 +903,8 @@
         <div class="container">
             <div class="contact-content">
                 <div class="section-title">
-                    <h2>Hubungi Kami</h2>
-                    <p>Butuh bantuan? Tim kami siap membantu Anda</p>
+                    <h2 style="color: white;">Hubungi Kami</h2>
+                    <p style="color: rgba(255, 255, 255, 0.8);">Butuh bantuan? Tim kami siap membantu Anda</p>
                 </div>
                 <div class="contact-info">
                     <a href="mailto:garzvoucher@gmail.com">
@@ -910,11 +938,11 @@
             </div>
             
             <div class="social-login">
-                <button class="social-btn btn-google">
-                    <i class="fab fa-google"></i> Google
+                <button class="social-btn btn-google" id="googleLogin">
+                    <i class="fab fa-google"></i> Masuk dengan Google
                 </button>
-                <button class="social-btn btn-facebook">
-                    <i class="fab fa-facebook-f"></i> Facebook
+                <button class="social-btn btn-facebook" id="facebookLogin">
+                    <i class="fab fa-facebook-f"></i> Masuk dengan Facebook
                 </button>
             </div>
             
@@ -948,11 +976,11 @@
             </div>
             
             <div class="social-login">
-                <button class="social-btn btn-google">
-                    <i class="fab fa-google"></i> Google
+                <button class="social-btn btn-google" id="googleRegister">
+                    <i class="fab fa-google"></i> Daftar dengan Google
                 </button>
-                <button class="social-btn btn-facebook">
-                    <i class="fab fa-facebook-f"></i> Facebook
+                <button class="social-btn btn-facebook" id="facebookRegister">
+                    <i class="fab fa-facebook-f"></i> Daftar dengan Facebook
                 </button>
             </div>
             
@@ -1009,9 +1037,9 @@
             diamondCard.innerHTML = `
                 <div class="diamond-icon">💎</div>
                 <div class="diamond-amount">${pkg.amount}</div>
+                <input type="text" class="user-id-input" placeholder="Masukkan ID Game Anda">
                 <div class="diamond-price">${pkg.price}</div>
                 <div class="diamond-original-price">${pkg.original}</div>
-                <input type="text" class="user-id-input" placeholder="Masukkan ID Game Anda">
                 <button class="btn btn-primary">Beli Sekarang</button>
             `;
             diamondsGrid.appendChild(diamondCard);
@@ -1075,6 +1103,24 @@
                     });
                 }
             });
+        });
+        
+        // Login with Google
+        document.getElementById('googleLogin').addEventListener('click', function() {
+            alert('Login dengan Google: Silakan gunakan akun Google Anda untuk masuk ke GarzVoucher');
+        });
+        
+        document.getElementById('googleRegister').addEventListener('click', function() {
+            alert('Daftar dengan Google: Silakan gunakan akun Google Anda untuk membuat akun GarzVoucher');
+        });
+        
+        // Login with Facebook
+        document.getElementById('facebookLogin').addEventListener('click', function() {
+            alert('Login dengan Facebook: Silakan gunakan akun Facebook Anda untuk masuk ke GarzVoucher');
+        });
+        
+        document.getElementById('facebookRegister').addEventListener('click', function() {
+            alert('Daftar dengan Facebook: Silakan gunakan akun Facebook Anda untuk membuat akun GarzVoucher');
         });
         
         // Animasi saat halaman dimuat
